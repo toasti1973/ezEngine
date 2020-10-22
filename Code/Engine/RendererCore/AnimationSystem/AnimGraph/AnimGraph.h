@@ -88,6 +88,6 @@ private:
   ezHybridArray<ezAnimGraphSamplingCache*, 8> m_SamplingCachesFreeList;
 
   bool m_bFinalized = false;
-  ezVec3 m_vRootMotion;
+  ezVec3 m_vRootMotion = ezVec3::ZeroVector();
   void Finalize(const ezSkeletonResource* pSkeleton);
 };
